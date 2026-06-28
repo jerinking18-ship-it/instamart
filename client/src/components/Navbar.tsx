@@ -102,7 +102,10 @@ const Navbar: React.FC = () => {
             <button onClick={() => setIsCartOpen(true)}>
               <ShoppingCartIcon className="size-5 text-lime-900"></ShoppingCartIcon>
             </button>
-            <button className="absolute -top-1 -right-2 text-xs text-white bg-orange-600 w-[16px] h-[16px] rounded-full">
+            <button
+              onClick={() => setIsCartOpen(true)}
+              className="absolute -top-1 -right-2 text-xs text-white bg-orange-600 w-[16px] h-[16px] rounded-full"
+            >
               <span>{cartCount}</span>
             </button>
           </div>
