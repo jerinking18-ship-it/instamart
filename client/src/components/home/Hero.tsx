@@ -1,12 +1,13 @@
 import { LeafIcon } from "lucide-react";
 import React from "react";
+import { heroImage } from "../../assets";
 
 const Hero: React.FC = () => {
   return (
     <section className="relative overflow-hidden min-h-[540px] mb- rounded flex items-center">
       <img
         className="absolute inset-0 h-full w-full object-cover"
-        src="src/assets/images/dvban.png"
+        src={heroImage}
         alt=""
       />
       <div className="relative max-w-xl mx-auto px-4 sm:px-6 lg:px-8 py-20 w-full">

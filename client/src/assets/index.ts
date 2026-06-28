@@ -16,6 +16,7 @@ import meat from "./images/meat.png";
 import ricebag from "./images/ricebag.png";
 import fruits from "./images/fruits.png";
 import vegetables from "./images/vegetables.png";
+import banner from "./images/dvban.png";
 
 export const images = {
   chips,
@@ -29,7 +30,9 @@ export const images = {
   ricebag,
   fruits,
   vegetables,
+  banner,
 };
+export const heroImage = banner;
 
 export const categoriesData: CategoryType[] = [
   {
