@@ -28,14 +28,14 @@ const ProductPage: React.FC = () => {
   const handleMinus = () => {
     if (inCart) {
       if (cartItem.quantity > 1)
-        updateQuatity(product._id, cartItem.quantity - 1);
-      else removeFromCart(product._id);
+        updateQuatity(product!._id, cartItem.quantity - 1);
+      else removeFromCart(product!._id);
     } else {
       setLocalQuantity(Math.max(1, localQuantity - 1));
     }
   };
   const handlePlus = () => {
-    if (inCart) updateQuatity(product._id, cartItem.quantity + 1);
+    if (inCart) updateQuatity(product!._id, cartItem.quantity + 1);
     else setLocalQuantity(localQuantity + 1);
   };
 

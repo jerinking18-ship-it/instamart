@@ -14,7 +14,7 @@ const OrderTracking: React.FC = () => {
   const navigate = useNavigate();
   const [order, setOrder] = useState<OrderType | null>(null);
   const [loading, setLoading] = useState(true);
-  const [liveLoacation, setLiveLocation] = useState<{
+  const [liveLoacation] = useState<{
     lat: number;
     lng: number;
   } | null>(null);

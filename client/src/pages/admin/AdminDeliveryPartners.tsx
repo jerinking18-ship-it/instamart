@@ -8,7 +8,7 @@ const AdminDeliveryPartners: React.FC = () => {
   const [partners, setPartners] = useState<DeliveryPartnerType[]>([]);
   const [loading, setLoading] = useState(true);
   const [showForm, setShowForm] = useState(false);
-  const [saving, setSaving] = useState(false);
+  const [saving] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",

@@ -1,12 +1,6 @@
 import React from "react";
 import type { AddressType } from "../types";
-import {
-  CheckIcon,
-  MapPinIcon,
-  PencilIcon,
-  Trash2Icon,
-  TrashIcon,
-} from "lucide-react";
+import { CheckIcon, MapPinIcon, PencilIcon, Trash2Icon } from "lucide-react";
 
 interface AddressCardProps {
   address: AddressType;
@@ -17,7 +11,6 @@ interface AddressCardProps {
 const AddressCard: React.FC<AddressCardProps> = ({
   address,
   onEditHandler,
-  setAddress,
 }) => {
   const handleDelete = async (id: string) => {
     console.log(id);

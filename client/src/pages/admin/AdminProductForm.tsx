@@ -8,7 +8,7 @@ const AdminProductForm: React.FC = () => {
   const { id } = useParams();
   const isEdit = Boolean(id);
   const [loading, setLoading] = useState(isEdit);
-  const [saving, setSaving] = useState(false);
+  const [saving] = useState(false);
   const [imageFile, setImageFile] = useState<File | null>(null);
   const [formData, setFormData] = useState({
     name: "",

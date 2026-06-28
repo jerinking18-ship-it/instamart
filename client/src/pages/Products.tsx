@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link, useSearchParams } from "react-router-dom";
 import type { ProductTypes } from "../types";
 import { categoriesData, dummyProducts } from "../assets";
-import { ChevronDownIcon, HomeIcon, SlidersHorizontalIcon } from "lucide-react";
+import { ChevronDownIcon, HomeIcon } from "lucide-react";
 import ProductCard from "../components/ProductCard";
 import Loading from "../components/Loading";
 import FilterPanel from "../components/FilterPanel";
@@ -10,9 +10,8 @@ import FilterPanel from "../components/FilterPanel";
 const Products: React.FC = () => {
   const [searchParams, setSearchPramas] = useSearchParams();
   const [products, setProducts] = useState<ProductTypes[]>([]);
-  const [totalPages, setTotalPages] = useState(1);
+  const [totalPages] = useState(1);
   const [loading, setLoading] = useState(true);
-  const [mobileFilterOption, setFilterMobileOption] = useState(false);
 
   const category = searchParams.get("category") || "";
   const organic = searchParams.get("organic") || "";
@@ -89,13 +88,6 @@ const Products: React.FC = () => {
                 </p>
               </div>
               <div className="flex flex-col lg:items-center gap-3">
-                <button
-                  onClick={() => setFilterMobileOption(true)}
-                  className="hidden flex items-center gap-2 px-3 py-2 text-sm font-medium text-lime-950 bg-lime-50 rounded hover:bg-lime-500 transition-colors"
-                >
-                  <SlidersHorizontalIcon className="size-4" />
-                  Filters
-                </button>
                 <div className="relative">
                   <select
                     className="appearance-none pl-3 pr-8 py-2 text-sm bg-white rounded border border-zinc-300 focus:border- outline-none cursor-pointer"
