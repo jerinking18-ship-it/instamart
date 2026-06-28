@@ -32,7 +32,7 @@ export const images = {
   vegetables,
   banner,
 };
-export const heroImage = fruits;
+export const heroImage = banner;
 
 export const categoriesData: CategoryType[] = [
   {
