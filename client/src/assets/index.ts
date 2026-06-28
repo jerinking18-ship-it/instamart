@@ -16,7 +16,7 @@ import meat from "./images/meat.png";
 import ricebag from "./images/ricebag.png";
 import fruits from "./images/fruits.png";
 import vegetables from "./images/vegetables.png";
-import banner from "./images/dvban.png";
+import banner from "./images/webban.png";
 
 export const images = {
   chips,
