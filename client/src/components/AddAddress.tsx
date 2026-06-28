@@ -34,54 +34,54 @@ const AddAddress: React.FC<any> = ({
           </div>
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-lime-950 mb-1.5 bg-white">
+              <label className="block text-sm font-medium text-lime-950 mb-1.5">
                 Label
               </label>
               <input
                 type="text"
                 placeholder="Home, Work, etc."
                 required
-                className="w-full px-4 py-2.5 text-sm rounded-lg border border-zinc-300 outline outline-none focus:border-lime-900 "
+                className="w-full px-4 py-2.5 text-sm rounded-lg border border-zinc-300 outline outline-none focus:border-lime-900 bg-white"
                 value={form.label}
                 onChange={(e) => setForm({ ...form, label: e.target.value })}
               />
             </div>
             <div>
-              <label className="block text-sm font-medium text-lime-950 mb-1.5 bg-white">
+              <label className="block text-sm font-medium text-lime-950 mb-1.5">
                 Street Address
               </label>
               <input
                 type="text"
                 placeholder=""
                 required
-                className="w-full px-4 py-2.5 text-sm rounded-lg border border-zinc-300 outline outline-none focus:border-lime-900 "
+                className="w-full px-4 py-2.5 text-sm rounded-lg border border-zinc-300 outline outline-none focus:border-lime-900 bg-white"
                 value={form.address}
                 onChange={(e) => setForm({ ...form, address: e.target.value })}
               />
             </div>
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="block text-sm font-medium text-lime-950 mb-1.5  bg-white">
+                <label className="block text-sm font-medium text-lime-950 mb-1.5 ">
                   City
                 </label>
                 <input
                   type="text"
                   placeholder=""
                   required
-                  className="w-full px-4 py-2.5 text-sm rounded-lg border border-zinc-300 outline outline-none focus:border-lime-900 "
+                  className="w-full px-4 py-2.5 text-sm rounded-lg border border-zinc-300 outline outline-none focus:border-lime-900 bg-white"
                   value={form.city}
                   onChange={(e) => setForm({ ...form, city: e.target.value })}
                 />
               </div>
               <div>
-                <label className="block text-sm font-medium text-lime-950 mb-1.5 bg-white">
+                <label className="block text-sm font-medium text-lime-950 mb-1.5 ">
                   State
                 </label>
                 <input
                   type="text"
                   placeholder=""
                   required
-                  className="w-full px-4 py-2.5 text-sm rounded-lg border border-zinc-300 outline outline-none focus:border-lime-900 "
+                  className="w-full px-4 py-2.5 text-sm rounded-lg border border-zinc-300 outline outline-none focus:border-lime-900 bg-white"
                   value={form.state}
                   onChange={(e) => setForm({ ...form, state: e.target.value })}
                 />
@@ -89,14 +89,14 @@ const AddAddress: React.FC<any> = ({
             </div>
             <div className="grid grid-cols-2 gap-3">
               <div>
-                <label className="block text-sm font-medium text-lime-950 mb-1.5 bg-white">
+                <label className="block text-sm font-medium text-lime-950 mb-1.5">
                   ZIP Code
                 </label>
                 <input
                   type="text"
                   placeholder=""
                   required
-                  className="w-full px-4 py-2.5 text-sm rounded-lg border border-zinc-300 outline outline-none focus:border-lime-900 "
+                  className="w-full px-4 py-2.5 text-sm rounded-lg border border-zinc-300 outline outline-none focus:border-lime-900 bg-white"
                   value={form.zip}
                   onChange={(e) => setForm({ ...form, zip: e.target.value })}
                 />
