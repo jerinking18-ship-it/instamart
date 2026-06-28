@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@layer components {
+  .dropdown-link {
+    @apply flex items-center gap-2 px-4 py-2 text-sm text-zinc-500 hover:text-lime-950 hover:bg-lime-100;
+  }
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-size: 22px !important;
+  color: #fefcf8ff !important;
+  opacity: 1 !important;
+}
+
+.slick-prev,
+.slick-next {
+  width: 38px !important;
+  height: 38px !important;
+  background-color: #f1b570ff !important;
+  border-radius: 360px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.slick-prev {
+  left: -50px !important;
+}
+
+.slick-next {
+  right: -40px !important;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background-color: #ed8916ff !important;
+  transition: background-color 0.2s;
+}
+input[type="range"] {
+  accent-color: #660b05;
+}
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.3s ease-out forwards;
+}
